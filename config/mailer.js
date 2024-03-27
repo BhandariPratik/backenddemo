@@ -4,5 +4,5 @@ dotenv.config();
 
 export const sendMail =()=>{
     console.log(process.env.password)
-    console.log(process.env.email)
+     console.log(process.env.email)
 }

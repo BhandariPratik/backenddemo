@@ -17,8 +17,6 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(logger('dev'));
 routerConfig(app);
 
- sendMail();
-
 connectDB().then(async() => {
   await server.listen(4000, () => {
       console.log(`Server listening on the port ${4000} ${new Date()} --------`);
